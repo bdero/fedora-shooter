@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="SpriteFrames" subresource_count="61" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
+	<ext_resource path="res://images/spinning_fedora/42.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/29.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/52.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/34.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/43.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/26.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/17.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/58.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/49.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/50.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/32.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/38.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/36.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/39.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/37.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/21.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/07.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/28.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/04.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/13.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/31.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/54.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/47.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/30.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/08.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/15.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/53.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/27.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/35.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/24.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/44.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/00.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/01.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/40.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/41.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/09.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/19.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/22.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/48.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/51.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/25.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/57.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/14.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/11.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/16.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/45.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/46.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/05.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/56.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/20.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/55.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/02.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/10.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/18.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/33.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/06.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/12.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/03.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/23.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/spinning_fedora/59.png" type="Texture"></ext_resource>
+	<main_resource>
+		<array name="frames" len="60" shared="false">
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/00.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/01.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/02.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/03.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/04.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/05.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/06.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/07.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/08.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/09.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/10.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/11.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/12.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/13.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/14.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/15.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/16.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/17.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/18.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/19.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/20.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/21.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/22.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/23.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/24.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/25.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/26.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/27.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/28.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/29.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/30.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/31.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/32.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/33.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/34.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/35.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/36.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/37.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/38.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/39.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/40.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/41.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/42.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/43.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/44.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/45.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/46.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/47.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/48.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/49.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/50.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/51.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/52.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/53.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/54.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/55.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/56.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/57.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/58.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/spinning_fedora/59.png">  </resource>
+		</array>
+
+	</main_resource>
+</resource_file>
