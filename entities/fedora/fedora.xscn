@@ -1,8 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="3" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
+<resource_file type="PackedScene" subresource_count="4" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
 	<ext_resource path="res://images/spinning_fedora.xml" type="SpriteFrames"></ext_resource>
 	<resource type="Animation" path="local://1">
-		<string name="resource/name"> "spin" </string>
+		<real name="length"> 0.5 </real>
+		<bool name="loop"> False </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> ".:transform/rot" </node_path>
+		<int name="tracks/0/interp"> 2 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="3"> 				1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="3" shared="false">
+				<real> 0 </real>
+				<real> 141.739868 </real>
+				<real> 0 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 0.2, 0.5 </real_array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://2">
 		<real name="length"> 1 </real>
 		<bool name="loop"> True </bool>
 		<real name="step"> 0.1 </real>
@@ -27,7 +49,7 @@
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
-			<string_array  len="27">
+			<string_array  len="33">
 				<string> "fedora" </string>
 				<string> "AnimatedSprite" </string>
 				<string> "_import_path" </string>
@@ -50,20 +72,26 @@
 				<string> "playback/process_mode" </string>
 				<string> "playback/default_blend_time" </string>
 				<string> "root/root" </string>
+				<string> "anims/tip" </string>
 				<string> "anims/spin" </string>
 				<string> "playback/active" </string>
 				<string> "playback/speed" </string>
 				<string> "blend_times" </string>
 				<string> "autoplay" </string>
+				<string> "anim_tree" </string>
+				<string> "AnimationTreePlayer" </string>
+				<string> "base_path" </string>
+				<string> "master_player" </string>
+				<string> "data" </string>
 			</string_array>
 			<string> "version" </string>
 			<int> 1 </int>
 			<string> "conn_count" </string>
 			<int> 0 </int>
 			<string> "node_count" </string>
-			<int> 2 </int>
+			<int> 3 </int>
 			<string> "variants" </string>
-			<array  len="16" shared="false">
+			<array  len="20" shared="false">
 				<node_path> "" </node_path>
 				<bool> True </bool>
 				<real> 1 </real>
@@ -72,7 +100,7 @@
 				<real> 0 </real>
 				<vector2> 1, 1 </vector2>
 				<resource  resource_type="SpriteFrames" path="res://images/spinning_fedora.xml">  </resource>
-				<int> 37 </int>
+				<int> 46 </int>
 				<color> 1, 1, 1, 1 </color>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_states__" </string>
@@ -86,7 +114,7 @@
 							<string> "use_snap" </string>
 							<bool> False </bool>
 							<string> "ofs" </string>
-							<vector2> -713, -339.818 </vector2>
+							<vector2> -503, -356.818 </vector2>
 							<string> "snap" </string>
 							<int> 10 </int>
 						</dictionary>
@@ -194,14 +222,79 @@
 					<string> "2D" </string>
 				</dictionary>
 				<int> 1 </int>
+				<real> 0.1 </real>
 				<node_path> ".." </node_path>
 				<resource  resource_type="Animation" path="local://1">  </resource>
+				<resource  resource_type="Animation" path="local://2">  </resource>
 				<array  len="0" shared="false">
 				</array>
 				<string> "spin" </string>
+				<node_path> "../anim" </node_path>
+				<dictionary  shared="false">
+					<string> "connections" </string>
+					<array  len="9" shared="false">
+						<string> "blend2" </string>
+						<string> "out" </string>
+						<int> 0 </int>
+						<string> "anim" </string>
+						<string> "blend2" </string>
+						<int> 0 </int>
+						<string> "anim 2" </string>
+						<string> "blend2" </string>
+						<int> 1 </int>
+					</array>
+					<string> "master" </string>
+					<node_path> "../anim" </node_path>
+					<string> "active" </string>
+					<bool> True </bool>
+					<string> "nodes" </string>
+					<array  len="4" shared="false">
+						<dictionary  shared="false">
+							<string> "from" </string>
+							<string> "spin" </string>
+							<string> "id" </string>
+							<string> "anim" </string>
+							<string> "pos" </string>
+							<vector2> 187, 28 </vector2>
+							<string> "type" </string>
+							<string> "animation" </string>
+						</dictionary>
+						<dictionary  shared="false">
+							<string> "id" </string>
+							<string> "out" </string>
+							<string> "type" </string>
+							<string> "output" </string>
+							<string> "pos" </string>
+							<vector2> 480, 59 </vector2>
+						</dictionary>
+						<dictionary  shared="false">
+							<string> "from" </string>
+							<string> "tip" </string>
+							<string> "id" </string>
+							<string> "anim 2" </string>
+							<string> "pos" </string>
+							<vector2> 188, 125 </vector2>
+							<string> "type" </string>
+							<string> "animation" </string>
+						</dictionary>
+						<dictionary  shared="false">
+							<string> "id" </string>
+							<string> "blend2" </string>
+							<string> "blend" </string>
+							<real> 0 </real>
+							<string> "filter" </string>
+							<array  len="0" shared="false">
+							</array>
+							<string> "type" </string>
+							<string> "blend2" </string>
+							<string> "pos" </string>
+							<vector2> 348, 82 </vector2>
+						</dictionary>
+					</array>
+				</dictionary>
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="62"> 				-1, -1, 1, 0, -1, 15, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 12, 1, 13, 1, 14, 3, 15, 9, 16, 10, 0, 0, 0, 18, 17, -1, 9, 2, 0, 19, 11, 20, 5, 21, 12, 22, 13, 23, 1, 24, 2, 25, 14, 26, 15, 0 </int_array>
+			<int_array  len="79"> 				-1, -1, 1, 0, -1, 15, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 12, 1, 13, 3, 14, 3, 15, 9, 16, 10, 0, 0, 0, 18, 17, -1, 10, 2, 0, 19, 11, 20, 12, 21, 13, 22, 14, 23, 15, 24, 1, 25, 2, 26, 16, 27, 17, 0, 0, 0, 29, 28, -1, 4, 2, 0, 30, 13, 31, 18, 32, 19, 0 </int_array>
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 		</dictionary>

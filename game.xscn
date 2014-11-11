@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="3" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
-	<ext_resource path="res://entities/fedora.gd" type="Script"></ext_resource>
-	<ext_resource path="res://entities/fedora.xscn" type="PackedScene"></ext_resource>
+	<ext_resource path="res://entities/fedora/fedora.gd" type="Script"></ext_resource>
+	<ext_resource path="res://entities/fedora/fedora.xscn" type="PackedScene"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
@@ -19,7 +19,7 @@
 				<string> "__meta__" </string>
 				<string> "fedora" </string>
 				<string> "AnimatedSprite" </string>
-				<string> "flip_h" </string>
+				<string> "frame" </string>
 				<string> "script/script" </string>
 			</string_array>
 			<string> "version" </string>
@@ -29,7 +29,7 @@
 			<string> "node_count" </string>
 			<int> 2 </int>
 			<string> "variants" </string>
-			<array  len="13" shared="false">
+			<array  len="14" shared="false">
 				<node_path> "" </node_path>
 				<bool> True </bool>
 				<real> 1 </real>
@@ -46,7 +46,7 @@
 							<int> 0 </int>
 							<string> "sources" </string>
 							<array  len="1" shared="false">
-								<string> "res://entities/fedora.gd" </string>
+								<string> "res://entities/fedora/fedora.gd" </string>
 							</array>
 						</dictionary>
 						<string> "2D" </string>
@@ -58,7 +58,7 @@
 							<string> "use_snap" </string>
 							<bool> False </bool>
 							<string> "ofs" </string>
-							<vector2> -47.936, -41.2125 </vector2>
+							<vector2> -110.936, 159.24 </vector2>
 							<string> "snap" </string>
 							<int> 10 </int>
 						</dictionary>
@@ -165,10 +165,11 @@
 					<string> "__editor_plugin_screen__" </string>
 					<string> "Script" </string>
 				</dictionary>
-				<resource  resource_type="PackedScene" path="res://entities/fedora.xscn">  </resource>
+				<resource  resource_type="PackedScene" path="res://entities/fedora/fedora.xscn">  </resource>
 				<vector2> 400, 537 </vector2>
 				<vector2> 0.7, 0.7 </vector2>
-				<resource  resource_type="Script" path="res://entities/fedora.gd">  </resource>
+				<int> 7 </int>
+				<resource  resource_type="Script" path="res://entities/fedora/fedora.gd">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
@@ -292,7 +293,7 @@
 				</dictionary>
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="44"> 				-1, -1, 1, 0, -1, 9, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 0, 0, 0, 12, 11, 8, 6, 2, 0, 7, 9, 9, 10, 13, 3, 14, 11, 10, 12, 0 </int_array>
+			<int_array  len="44"> 				-1, -1, 1, 0, -1, 9, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 0, 0, 0, 12, 11, 8, 6, 2, 0, 7, 9, 9, 10, 13, 11, 14, 12, 10, 13, 0 </int_array>
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 		</dictionary>
