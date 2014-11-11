@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="SampleLibrary" subresource_count="4" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
+	<ext_resource path="res://sfx/nice_meme.smp" type="Sample"></ext_resource>
+	<ext_resource path="res://sfx/tip.smp" type="Sample"></ext_resource>
+	<ext_resource path="res://sfx/mlady.smp" type="Sample"></ext_resource>
+	<main_resource>
+		<dictionary name="samples/nice_meme" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  resource_type="Sample" path="res://sfx/nice_meme.smp">  </resource>
+		</dictionary>
+		<dictionary name="samples/tip" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  resource_type="Sample" path="res://sfx/tip.smp">  </resource>
+		</dictionary>
+		<dictionary name="samples/mlady" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  resource_type="Sample" path="res://sfx/mlady.smp">  </resource>
+		</dictionary>
+
+	</main_resource>
+</resource_file>

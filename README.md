@@ -18,7 +18,7 @@ How to control
 
 TODO
 ----
-- Press space to Tip ("tip" sound?)
+- ~~Press space to Tip ("tip" sound?)~~
 - Tipping shoots
 - Title screen
 - Bullets (Nice Guys™?)

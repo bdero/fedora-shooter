@@ -2,16 +2,20 @@
 extends AnimatedSprite
 
 
+var anim = get_node("anim")
+var sound = get_node("sample_player")
+
 const MAX_SPEED = 3
 const ACCEL_SPEED = 20
 const FRICTION = ACCEL_SPEED*0.5
 
 var x_speed = 0
-var anim = get_node("anim")
+
 
 func _ready():
 	set_process(true)
 	set_process_input(true)
+	print(get_node("/root/sample_player"))
 
 func _process(dt):
 	var left = Input.is_action_pressed("strafe_left")
@@ -37,3 +41,4 @@ func _input(event):
 
 func tip():
 	anim.play("tip")
+	sound.play("tip")
