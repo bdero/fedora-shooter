@@ -2,20 +2,25 @@
 extends AnimatedSprite
 
 
-var anim = get_node("anim")
-var sound = get_node("sample_player")
+var anim
+var sound
+var shoot_timer
 
 const MAX_SPEED = 3
 const ACCEL_SPEED = 20
 const FRICTION = ACCEL_SPEED*0.5
 
 var x_speed = 0
+var previous_shooting = false
 
 
 func _ready():
+	anim = get_node("anim")
+	sound = get_node("sample_player")
+	shoot_timer = get_node("shoot_timer")
+
 	set_process(true)
 	set_process_input(true)
-	print(get_node("/root/sample_player"))
 
 func _process(dt):
 	var left = Input.is_action_pressed("strafe_left")
@@ -31,13 +36,32 @@ func _process(dt):
 	if left == right:
 		x_speed = max(abs(x_speed) - FRICTION*dt, 0)*sign(x_speed)
 
+	var new_pos = get_pos() + Vector2(x_speed, 0)
+
+	# Boundaries
+	if new_pos.x < 0 or new_pos.x > 800:
+		x_speed = 0
+		new_pos.x = max(min(new_pos.x, 800), 0)
+
 	# Apply movement
-	set_pos(get_pos() + Vector2(x_speed, 0))
-	#self.move_local_x(x_speed*dt)
+	set_pos(new_pos)
 
 func _input(event):
-	if event.is_action("shoot") and Input.is_action_pressed("shoot"):
-		tip()
+	if event.is_action("shoot"):
+		var shooting = Input.is_action_pressed("shoot")
+		if shooting and not previous_shooting:
+			do_tip()
+			shoot_timer.start()
+		elif not shooting and previous_shooting:
+			shoot_timer.stop()
+
+		previous_shooting = shooting
+
+func _on_shoot_timer_timeout():
+	do_tip()
+
+func do_tip():
+	tip()
 
 func tip():
 	anim.play("tip")
