@@ -5,10 +5,11 @@ extends AnimatedSprite
 var anim
 var sound
 var shoot_timer
+var bullet = load("res://entities/bullet/bullet.xscn")
 
-const MAX_SPEED = 3
-const ACCEL_SPEED = 20
-const FRICTION = ACCEL_SPEED*0.5
+const MAX_SPEED = 600
+const ACCEL_SPEED = 15
+const FRICTION = ACCEL_SPEED*0.6
 
 var x_speed = 0
 var previous_shooting = false
@@ -19,6 +20,8 @@ func _ready():
 	sound = get_node("sample_player")
 	shoot_timer = get_node("shoot_timer")
 
+	set_as_toplevel(true)
+
 	set_process(true)
 	set_process_input(true)
 
@@ -28,15 +31,15 @@ func _process(dt):
 
 	# Acceleration
 	if left and not right:
-		x_speed = max(x_speed - ACCEL_SPEED*dt, -MAX_SPEED)
+		x_speed = max(x_speed - ACCEL_SPEED, -MAX_SPEED)
 	if right and not left:
-		x_speed = min(x_speed + ACCEL_SPEED*dt, MAX_SPEED)
+		x_speed = min(x_speed + ACCEL_SPEED, MAX_SPEED)
 
 	# Friction
 	if left == right:
-		x_speed = max(abs(x_speed) - FRICTION*dt, 0)*sign(x_speed)
+		x_speed = max(abs(x_speed) - FRICTION, 0)*sign(x_speed)
 
-	var new_pos = get_pos() + Vector2(x_speed, 0)
+	var new_pos = get_pos() + Vector2(x_speed, 0)*dt
 
 	# Boundaries
 	if new_pos.x < 0 or new_pos.x > 800:
@@ -66,3 +69,9 @@ func do_tip():
 func tip():
 	anim.play("tip")
 	sound.play("tip")
+
+	var new_bullet = bullet.instance()
+	new_bullet.set_pos(get_pos() + Vector2(0, -10))
+	new_bullet.speed.x = x_speed
+
+	get_parent().add_child(new_bullet)

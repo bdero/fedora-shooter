@@ -55,7 +55,7 @@
 			<string> "node_count" </string>
 			<int> 4 </int>
 			<string> "variants" </string>
-			<array  len="20" shared="false">
+			<array  len="19" shared="false">
 				<node_path> "" </node_path>
 				<bool> True </bool>
 				<real> 1 </real>
@@ -70,7 +70,7 @@
 						<string> "Script" </string>
 						<dictionary  shared="false">
 							<string> "current" </string>
-							<int> 1 </int>
+							<int> 0 </int>
 							<string> "sources" </string>
 							<array  len="2" shared="false">
 								<string> "res://entities/fedora/fedora.gd" </string>
@@ -200,7 +200,7 @@
 				<resource  resource_type="PackedScene" path="res://entities/fedora/fedora.xscn">  </resource>
 				<vector2> 400, 537 </vector2>
 				<vector2> 0.7, 0.7 </vector2>
-				<int> 3 </int>
+				<int> 57 </int>
 				<resource  resource_type="Script" path="res://entities/fedora/fedora.gd">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_states__" </string>
@@ -220,12 +220,10 @@
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
-							<string> "deflight_rot_y" </string>
-							<real> 0.628319 </real>
-							<string> "zfar" </string>
-							<real> 500 </real>
 							<string> "fov" </string>
 							<real> 45 </real>
+							<string> "zfar" </string>
+							<real> 500 </real>
 							<string> "viewports" </string>
 							<array  len="4" shared="false">
 								<dictionary  shared="false">
@@ -293,22 +291,24 @@
 									<vector3> 0, 0, 0 </vector3>
 								</dictionary>
 							</array>
-							<string> "viewport_mode" </string>
-							<int> 1 </int>
+							<string> "deflight_rot_y" </string>
+							<real> 0.628319 </real>
 							<string> "default_light" </string>
 							<bool> True </bool>
+							<string> "viewport_mode" </string>
+							<int> 1 </int>
 							<string> "ambient_light_color" </string>
 							<color> 0.15, 0.15, 0.15, 1 </color>
 							<string> "show_grid" </string>
 							<bool> True </bool>
-							<string> "show_origin" </string>
-							<bool> True </bool>
 							<string> "znear" </string>
 							<real> 0.1 </real>
-							<string> "default_srgb" </string>
-							<bool> False </bool>
+							<string> "show_origin" </string>
+							<bool> True </bool>
 							<string> "deflight_rot_x" </string>
 							<real> 0.942478 </real>
+							<string> "default_srgb" </string>
+							<bool> False </bool>
 						</dictionary>
 					</dictionary>
 					<string> "__editor_show_subtree" </string>
@@ -323,10 +323,9 @@
 					<string> "__editor_plugin_screen__" </string>
 					<string> "2D" </string>
 				</dictionary>
-				<real> 0.4 </real>
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="116"> 				-1, -1, 1, 0, -1, 10, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 0, 0, 0, 13, 12, -1, 24, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 14, 9, 15, 1, 16, 3, 17, 1, 18, 5, 19, 6, 20, 10, 21, 10, 22, 11, 23, 11, 24, 1, 25, 1, 26, 12, 27, 12, 28, 12, 29, 12, 0, 0, 0, 31, 30, 13, 6, 2, 0, 7, 14, 9, 15, 32, 16, 10, 17, 11, 18, 0, 2, 0, 34, 33, -1, 4, 2, 0, 35, 19, 36, 3, 37, 3, 0 </int_array>
+			<int_array  len="116"> 				-1, -1, 1, 0, -1, 10, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 0, 0, 0, 13, 12, -1, 24, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 14, 9, 15, 1, 16, 3, 17, 1, 18, 5, 19, 6, 20, 10, 21, 10, 22, 11, 23, 11, 24, 1, 25, 1, 26, 12, 27, 12, 28, 12, 29, 12, 0, 0, 0, 31, 30, 13, 6, 2, 0, 7, 14, 9, 15, 32, 16, 10, 17, 11, 18, 0, 2, 0, 34, 33, -1, 4, 2, 0, 35, 12, 36, 3, 37, 3, 0 </int_array>
 			<string> "conns" </string>
 			<int_array  len="6"> 				3, 2, 39, 38, 2, 0 </int_array>
 		</dictionary>
