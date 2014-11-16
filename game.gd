@@ -19,5 +19,5 @@ func _on_viewport_size_changed():
 
 	# Set camera to full width at bottom of playing field
 	var offset_x = DEFAULT_FIELD_SIZE.x*scale/2
-	var offset_y = DEFAULT_FIELD_SIZE.y/2 - DEFAULT_FIELD_SIZE.y*(1 - scale)
+	var offset_y = DEFAULT_FIELD_SIZE.y*scale - get_viewport_rect().size.y/2
 	camera.set_offset(Vector2(offset_x, offset_y))
