@@ -8,7 +8,7 @@ var shoot_timer
 var bullet = load("res://entities/bullet/bullet.xscn")
 
 const MAX_SPEED = 600
-const ACCEL_SPEED = 15
+const ACCEL_SPEED = 1500
 const FRICTION = ACCEL_SPEED*0.6
 
 var x_speed = 0
@@ -31,13 +31,13 @@ func _process(dt):
 
 	# Acceleration
 	if left and not right:
-		x_speed = max(x_speed - ACCEL_SPEED, -MAX_SPEED)
+		x_speed = max(x_speed - ACCEL_SPEED*dt, -MAX_SPEED)
 	if right and not left:
-		x_speed = min(x_speed + ACCEL_SPEED, MAX_SPEED)
+		x_speed = min(x_speed + ACCEL_SPEED*dt, MAX_SPEED)
 
 	# Friction
 	if left == right:
-		x_speed = max(abs(x_speed) - FRICTION, 0)*sign(x_speed)
+		x_speed = max(abs(x_speed) - FRICTION*dt, 0)*sign(x_speed)
 
 	var new_pos = get_pos() + Vector2(x_speed, 0)*dt
 
