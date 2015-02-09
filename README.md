@@ -19,9 +19,9 @@ How to control
 TODO
 ----
 - ~~Press space to Tip ("tip" sound?)~~
-- Tipping shoots
+- ~~Tipping shoots~~
 - Title screen
-- Bullets (Nice Guys™?)
+- ~~Bullets (Nice Guys™?)~~
 - Enemies (fedora memes/fedora "shaming"?)
 - Enemy death (score? "nice meme" sound?)
 - Parallax space background
@@ -29,7 +29,6 @@ TODO
 - Player death
 - Score board
 - Fitting music
-- Title screen
 
 License
 -------
